@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Demo</title>
+</head>
+<body>
+<input type="text" id="sayi" placeholder="Faktoriali hesablanacaq ədədi daxil edin">
+ 
+<input type="button" value="Hesabla" id="hesabla">
+<script>
+ 
+function hesabla(){
+var faktorial=1;
+var sayi=document.getElementById("sayi").value;
+sayi=Number(sayi);
+ 
+if(sayi>=0)
+{
+ 
+for(var i=1;i<=sayi;i++)
+{
+faktorial=faktorial*i;
+}
+
+window.alert(sayi+" sayisinin faktoriali "+faktorial);
+}
+ 
+}
+ 
+
+var hesabBtn=document.getElementById("hesabla");
+ 
+
+hesabBtn.onclick=hesabla;
+ 
+</script>
+</body>
+</html>
